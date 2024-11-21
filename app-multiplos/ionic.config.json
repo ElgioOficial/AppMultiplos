@@ -1,0 +1,7 @@
+{
+  "name": "AppMultiplos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

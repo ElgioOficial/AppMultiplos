@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Encontrar Múltiplos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Campo de Entrada -->
+  <ion-item>
+    <ion-label position="floating">Ingrese un número</ion-label>
+    <ion-input type="number" [(ngModel)]="userNumber"></ion-input>
+  </ion-item>
+
+  <!-- Botón para Buscar Múltiplos -->
+  <ion-button expand="full" (click)="findMultiples()">Buscar Múltiplos</ion-button>
+
+  <!-- Lista de Resultados -->
+  <ion-list>
+    <ion-item *ngFor="let number of numbers">
+      <ion-label [ngStyle]="{'color': getColor(number)}">
+        {{ number }}
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
